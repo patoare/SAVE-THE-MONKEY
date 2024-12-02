@@ -6,9 +6,9 @@ body {
   background-color: lightblue;
   
 }
-#welcome-player img {
-    width: 220px;
-    height: 220px;
+.logo {
+    width: 180px;
+    height: 180px;
     padding-top: 10px;
     border-radius: 60%;
     border: solid, black;
@@ -17,12 +17,31 @@ body {
     color: burlywood;
 }
 
-#playing-game{
-    background-color: rgb(171, 240, 171);
-    border: solid, black
+#welcome-player button {
+    background-color: rgb(204, 169, 236);
+    border: none;
+    border-radius: 100px;
+    height: 40px;
+}
+.instructions img{
+height: 80px;
+background-color: transparent;
 }
 
-
+#playing-game{
+    background-image: url(../images/background\ game.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;   
+    border: solid, black
+}
+#playing-game p{
+color:white;
+font-weight: bold;
+display: flex;
+flex-direction: row;
+}
 #playing-game{
     display:none;
   }
@@ -33,8 +52,10 @@ body {
 }
 
 #game-result img{
-    width: 220px;
-    padding-top: 10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 60%;
+    border: solid, black;
 }
 
 #game-result h2{
