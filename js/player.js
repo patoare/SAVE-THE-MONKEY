@@ -22,11 +22,16 @@ constructor(gameScreen) {
  
 updatePosition() {
     this.positionX += this.speed * this.directionX;
-    
+    if (this.positionX < 0) {
+this.positionX = 0 
+    } 
+    if(this.positionX > this.gameScreen.clientWidth - this.width) {
+        this.positionX = this.positionX.clientWidth  - this.width
+    }
 }
 
 move() {
     this.updatePosition();
     this.element.style.left = `${this.positionX}px`;
 }
-}
+} 

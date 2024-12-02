@@ -11,6 +11,7 @@ class Game {
     this.gameIsOver = false;
     this.gameLoop1 
     this.currentFrame = 0;
+    this.obstacles = [];
     }
     start(){
       this.welcomeScreen.style.display = 'none';
@@ -20,7 +21,9 @@ class Game {
       this.gameScreen.style.width = `${this.width}px`;
 
       this.player = new Player(this.gameScreen)
- 
+      
+      this.obstacles.push(new Obstacles(this.gameScreen))
+      
       this.gameLoop()
     }
 
@@ -28,6 +31,10 @@ class Game {
         this.gameLoop1 = setInterval(() => {
         this.currentFrame += 1;
         this.player.move();
+
+        this.obstacles.forEach(currentObstacle => {
+        currentObstacle.move()
+        })
 
         }, 1000 / 60)
     }
