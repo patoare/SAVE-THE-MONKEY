@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    text-align: center;
+  }
+#welcome-player{
+  background-color: lightblue;
+  
+}
+#welcome-player img {
+    width: 220px;
+    height: 220px;
+    padding-top: 10px;
+    border-radius: 60%;
+    border: solid, black;
+}
+#welcome-player h1 {
+    color: burlywood;
+}
+
+#playing-game{
+    background-color: rgb(171, 240, 171);
+    border: solid, black
+}
+
+
+#playing-game{
+    display:none;
+  }
+
+#game-result{
+  display: none;
+  background-color: rgb(81, 116, 81);
+}
+
+#game-result img{
+    width: 220px;
+    padding-top: 10px;
+}
+
+#game-result h2{
+  color: burlywood;
+ 
+}
+    
+    
