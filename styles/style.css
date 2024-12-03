@@ -4,18 +4,23 @@ body {
     margin: 0;
   }
 #welcome-player{
-  background-color: lightblue;
+  background-color:  rgb(81, 116, 81);
   
 }
+
 .logo {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     padding-top: 10px;
-    border-radius: 60%;
-    border: solid, black;
+    
 }
 #welcome-player h1 {
     color: burlywood;
+    padding-top: 0;
+}
+
+#welcome-player h4{
+  padding-bottom: 20px;
 }
 
 #welcome-player button {
@@ -23,10 +28,13 @@ body {
     border: none;
     border-radius: 100px;
     height: 40px;
+    font-weight: bolder;
+    color: white;
+    
 }
-.instructions img{
-height: 80px;
-background-color: transparent;
+.instructions p{
+padding-top: 10px;
+padding-bottom: 10px;
 }
 
 #playing-game{
@@ -35,8 +43,10 @@ background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;   
-    border: solid, black
+    border: solid, black;
+    overflow: hidden;
 }
+
 #playing-game p{
 color:white;
 font-weight: bold;
@@ -45,6 +55,7 @@ flex-direction: row;
 }
 #playing-game{
     display:none;
+    overflow: hidden;
   }
 
 #game-result{
@@ -53,15 +64,27 @@ flex-direction: row;
 }
 
 #game-result img{
-    width: 180px;
-    height: 180px;
-    border-radius: 60%;
-    border: solid, black;
+    width: 160px;
+    height: 160px;
 }
 
+
 #game-result h2{
+  padding-top: 10px;
   color: burlywood;
- 
+  font-size:xx-large;
 }
+
+#game-result button{
+font-weight: bold;
+color:white;
+margin-bottom: 20px;
+width: 100px;
+height: 50px;
+background-color: rgb(204, 169, 236);
+border-color: transparent;
+}
+
+
     
     

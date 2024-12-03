@@ -4,11 +4,15 @@ window.onload = function () {
 
     let game
   
+    
     startButton.addEventListener("click", function () {
-      startGame();
-      
-    });
-  
+        startGame();
+      });
+      restartButton.addEventListener("click", function () {
+        startGame();
+      });
+
+    }
     function startGame() {
       console.log("start game");
       game = new Game();
@@ -27,5 +31,5 @@ window.onload = function () {
             game.player.directionX = 0;
         } 
         }
-    )
-  };  
+    ) 
+
