@@ -5,6 +5,8 @@ body {
   }
 #welcome-player{
   background-color:  rgb(81, 116, 81);
+  height:1000px;
+  padding-top: 190px;
   
 }
 
@@ -38,11 +40,14 @@ padding-bottom: 10px;
 }
 
 #playing-game{
+    display: flex;
+    justify-content:right;
+    align-items: center;
     background-image: url(../images/background\ game.jpg);
     background-size: cover;
+    align-items:start;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: transparent;   
     border: solid, black;
     overflow: hidden;
 }
@@ -53,6 +58,7 @@ font-weight: bold;
 display: flex;
 flex-direction: row;
 }
+
 #playing-game{
     display:none;
     overflow: hidden;
@@ -61,6 +67,8 @@ flex-direction: row;
 #game-result{
   display: none;
   background-color: rgb(81, 116, 81);
+  padding-top: 190px;
+  height: 1000px;
 }
 
 #game-result img{

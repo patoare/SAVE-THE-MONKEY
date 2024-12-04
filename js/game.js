@@ -4,10 +4,10 @@ class Game {
     this.gameScreen = document.getElementById('playing-game');
     this.gameResult = document.getElementById('game-result');
     this.scorePlayer = document.getElementById('score');
-    this.finalScore = document.getElementById('final-score');
     this.livesPlayer = document.getElementById('lives');
-    this.height = 600;
-    this.width = 500;
+    this.finalScore = document.getElementById('final-score');
+    this.height = 1000;
+    this.width = 800;
     this.player =
     this.score = 0;
     this.lives = 3;
@@ -15,9 +15,7 @@ class Game {
     this.gameLoop1 
     this.currentFrame = 0;
     this.obstacles = [];
-    this.finalScore = 0;
-    this.score = 0;
-    this.lives = 3;
+    
     }
     start(){
       this.welcomeScreen.style.display = 'none';
@@ -68,7 +66,8 @@ class Game {
         this.obstacles = followingObs
 
         if(this.gameIsOver) {
-          this.scorePlayer.innerText = this.finalScore;
+          console.log(this.score)
+          this.finalScore.innerText = this.score;
           clearInterval(this.gameLoop1);
           this.player.element.remove();
 
