@@ -6,7 +6,7 @@ class Game {
     this.scorePlayer = document.getElementById('score');
     this.livesPlayer = document.getElementById('lives');
     this.finalScore = document.getElementById('final-score');
-    this.height = 800;
+    this.height = 600;
     this.width = 500;
     this.player =
     this.score = 0;
