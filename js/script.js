@@ -20,9 +20,9 @@ window.onload = function () {
     }
     document.addEventListener('keydown', (event) => {
         if(event.code === 'KeyA' || event.code === 'ArrowLeft') {
-            game.player.directionX = -1;
+            game.player.directionX = -1.5;
         } if (event.code === 'KeyD' || event.code === 'ArrowRight') {
-            game.player.directionX = 1;
+            game.player.directionX = 1.5;
         }
     } )
 

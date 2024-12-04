@@ -15,10 +15,10 @@ class Obstacles {
         }
        
         if (this.type === "good") {
-            this.element.src = "../images/finalBanana.png";
+            this.element.src = "images/finalBanana.png";
         } 
         else {
-            this.element.src = "../images/Arana_vector_png.png";
+            this.element.src = "images/Arana_vector_png.png";
         }
 
         this.element.style.position = 'absolute'; 
