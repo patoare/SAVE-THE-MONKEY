@@ -6,6 +6,9 @@ class Game {
     this.scorePlayer = document.getElementById('score');
     this.livesPlayer = document.getElementById('lives');
     this.finalScore = document.getElementById('final-score');
+    this.audioGame = document.getElementById('gameAudio');
+    this.bananaAudio = document.getElementById('bananaAudio');
+    this.spiderAudio = document.getElementById('spiderAudio');
     this.height = 600;
     this.width = 500;
     this.player =
@@ -47,11 +50,15 @@ class Game {
            currentObstacle.element.remove()
            
            if(currentObstacle.type === "good"){
-            this.score += 100
-            this.speed *= 2
+            bananaAudio.currentTime = 0;
+            bananaAudio.play();
+            this.score += 100;
+            this.speed *= 2;
            }
            else if(currentObstacle.type === "bad") {
-            this.lives -=1
+            this.spiderAudio.currentTime =0;
+            this.spiderAudio.play();            
+            this.lives -=1;
            }
            
            if(this.lives < 0) {
@@ -66,6 +73,8 @@ class Game {
         this.obstacles = followingObs
 
         if(this.gameIsOver) {
+          gameAudio.pause();
+          gameAudio.currentTime = 0;
           console.log(this.score)
           this.finalScore.innerText = this.score;
           clearInterval(this.gameLoop1);

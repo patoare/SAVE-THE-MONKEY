@@ -6,6 +6,7 @@ window.onload = function () {
   
     
     startButton.addEventListener("click", function () {
+        gameAudio.play();
         startGame();
       });
       restartButton.addEventListener("click", function () {
@@ -13,6 +14,7 @@ window.onload = function () {
       });
 
     }
+
     function startGame() {
       console.log("start game");
       game = new Game();
@@ -30,6 +32,5 @@ window.onload = function () {
         if(event.code === 'KeyA' || event.code === 'ArrowLeft' || event.code === 'KeyD' || event.code === 'ArrowRight') {
             game.player.directionX = 0;
         } 
-        }
-    ) 
+        } ) 
 
