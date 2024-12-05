@@ -61,10 +61,7 @@ class Game {
             this.lives -=1;
            }
            
-           if(this.score > 800) {
-            console.log('ACAA')
-            this.element * 0.5
-           }
+           
            
            if(this.lives < 0) {
             this.gameIsOver = true
@@ -89,7 +86,7 @@ class Game {
            currentObstacle.element.remove()
           })
           
-          this.gameScreen.style.display = 'none';
+          this.gameScreen.style.display = 'display';
           this.gameResult.style.display = 'block';
         }
         }, 1000 / 60)
