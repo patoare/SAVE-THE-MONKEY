@@ -8,6 +8,7 @@ class Obstacles {
         this.speed = 7;
         this.element = document.createElement('img');
 
+
         if (Math.random() > 0.5) {
             this.type = "good";
         } else {
@@ -31,12 +32,15 @@ class Obstacles {
     }     
 
     updatePosition() {
-     this.positionY += this.speed   
+     this.positionY +=  this.speed  
     }
 
     move() {
         this.updatePosition();
         this.element.style.top = `${this.positionY}px`;
+        if(this.score > 500) {
+            this.speed *= 2;
+           } 
         
         if(this.positionY > this.gameScreen.clientHeight - 40) {
             this.element.remove()

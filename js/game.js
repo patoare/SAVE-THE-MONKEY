@@ -53,12 +53,17 @@ class Game {
             bananaAudio.currentTime = 0;
             bananaAudio.play();
             this.score += 100;
-            this.speed *= 2;
+            
            }
            else if(currentObstacle.type === "bad") {
             this.spiderAudio.currentTime =0;
             this.spiderAudio.play();            
             this.lives -=1;
+           }
+           
+           if(this.score > 800) {
+            console.log('ACAA')
+            this.element * 0.5
            }
            
            if(this.lives < 0) {

@@ -22,7 +22,10 @@ body {
 }
 
 #welcome-player h4{
+  padding-top: 30px;
   padding-bottom: 20px;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 #welcome-player button {
@@ -31,24 +34,36 @@ body {
     border-radius: 100px;
     height: 40px;
     font-weight: bolder;
+    margin-top: 30px;
     color: white;
     
 }
 .instructions p{
 padding-top: 10px;
 padding-bottom: 10px;
+font-size: 30px;
+font-weight: bolder;
+}
+
+.instructions p img{
+  width: 40px;
+  height: 40px;
+  padding-top: 30px;
+  margin-right: 15px;
+  margin-left: 15px;;
+
 }
 
 #playing-game{
     display: flex;
     justify-content:right;
-    align-items: center;
-    background-image: url(../images/background\ game.jpg);
+    background-image: 
+    url(../images/background\ game.jpg);
     background-size: cover;
     align-items:start;
     background-position: center;
     background-repeat: no-repeat;
-    border: solid, black;
+    border: solid black;
     overflow: hidden;
 }
 
@@ -71,11 +86,15 @@ flex-direction: row;
   height: 1000px;
 }
 
+#game-result h4{
+  font-size: 20px;
+  padding-top: 30px;
+}
+
 #game-result img{
     width: 160px;
     height: 160px;
 }
-
 
 #game-result h2{
   padding-top: 10px;
@@ -83,16 +102,25 @@ flex-direction: row;
   font-size:xx-large;
 }
 
+#game-result p{
+  font-size: 20px;
+  padding-top: 30px;
+}
+
 #game-result button{
 font-weight: bold;
+font-size: 15px;
 color:white;
-margin-bottom: 20px;
+margin-top: 30px;
 width: 100px;
 height: 50px;
 background-color: rgb(204, 169, 236);
 border-color: transparent;
 }
 
+#final-score{
+  font-size: 20px;
+}
 
     
     

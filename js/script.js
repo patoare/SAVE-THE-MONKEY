@@ -10,6 +10,7 @@ window.onload = function () {
         startGame();
       });
       restartButton.addEventListener("click", function () {
+        gameAudio.play();
         startGame();
       });
 
