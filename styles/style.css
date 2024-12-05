@@ -1,11 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 #welcome-player{
   background-color:  rgb(81, 116, 81);
@@ -57,19 +53,18 @@ font-weight: bolder;
 }
 
 #playing-game{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 80%;
-  background-image: url(../images/background\ game.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: solid black;
-  overflow: visible;
+  display: none;
+    justify-content:right;
+    background-image: 
+    url(../images/background\ game.jpg);
+    background-size: cover;
+    align-items:start;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid black;
+    overflow: hidden;
 }
+
 
 #playing-game p{
 color:white;

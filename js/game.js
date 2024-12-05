@@ -22,7 +22,7 @@ class Game {
     }
     start(){
       this.welcomeScreen.style.display = 'none';
-      this.gameScreen.style.display = 'flex';
+      this.gameScreen.style.display = 'block';
       this.gameResult.style.display = 'none';
       this.gameScreen.style.height = `${this.height}px`;
       this.gameScreen.style.width = `${this.width}px`;
@@ -86,7 +86,7 @@ class Game {
            currentObstacle.element.remove()
           })
           
-          this.gameScreen.style.display = 'display';
+          this.gameScreen.style.display = 'none';
           this.gameResult.style.display = 'block';
         }
         }, 1000 / 60)
